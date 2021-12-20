@@ -5,3 +5,11 @@
 body {
   @apply font-sans;
 }
+
+h2 {
+  @apply font-bold text-2xl lg:text-5xl;
+}
+
+p {
+  @apply text-lg leading-8 lg:text-xl lg:leading-9;
+}
