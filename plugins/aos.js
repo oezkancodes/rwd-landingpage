@@ -1,10 +1,12 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default (context) => {
+export default () => {
   if (process.client) {
-    AOS.init({
-      duration: 800,
+    window.onNuxtReady(() => {
+      AOS.init({
+        duration: 800,
+      });
     });
   }
 };
