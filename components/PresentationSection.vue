@@ -3,7 +3,8 @@
     <div class="container max-w-5xl py-12 lg:py-24">
       <!-- Title -->
       <h2 data-aos="fade-up" class="text-center">
-        Sektion
+        Die intelligente Kamera. <br />
+        Einfach überall platzieren.
       </h2>
 
       <!-- Image -->
