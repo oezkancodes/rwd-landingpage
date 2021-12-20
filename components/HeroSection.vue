@@ -14,13 +14,23 @@
       />
     </video>
     <div class="container text-center relative">
-      <h1 class="text-4xl lg:text-7xl mb-4 lg:mb-6">
+      <h1
+        data-aos="fade-up"
+        class="text-4xl lg:text-7xl mb-4 lg:mb-6"
+      >
         <span class="font-black">WatchCam</span> Mate X2
       </h1>
-      <p class="text-xl lg:text-3xl mb-6 lg:mb-8">
+
+      <p
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="text-xl lg:text-3xl mb-6 lg:mb-8"
+      >
         Überwachen wie ein Profi
       </p>
-      <Button>Entdecken</Button>
+      <Button data-aos="fade-up" data-aos-delay="400"
+        >Entdecken</Button
+      >
     </div>
   </section>
 </template>
