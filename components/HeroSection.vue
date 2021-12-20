@@ -2,6 +2,7 @@
   <section
     class="flex items-center justify-center min-h-screen relative overflow-hidden"
   >
+    <!-- Background video -->
     <video
       id="myVideo"
       class="absolute top-0 bottom-0 opacity-[15%] h-full w-full object-cover"
@@ -13,7 +14,9 @@
         type="video/mp4"
       />
     </video>
+
     <div class="container text-center relative">
+      <!-- Title -->
       <h1
         data-aos="fade-up"
         class="text-4xl lg:text-7xl mb-4 lg:mb-6"
@@ -21,6 +24,7 @@
         <span class="font-black">WatchCam</span> Mate X2
       </h1>
 
+      <!-- Description -->
       <p
         data-aos="fade-up"
         data-aos-delay="200"
@@ -28,7 +32,12 @@
       >
         Überwachen wie ein Profi
       </p>
-      <Button data-aos="fade-up" data-aos-delay="400"
+
+      <!-- CTA -->
+      <Button
+        v-scroll-to="{ el: '#start', offset: 1 }"
+        data-aos="fade-up"
+        data-aos-delay="400"
         >Entdecken</Button
       >
     </div>
