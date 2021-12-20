@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex items-center justify-center h-screen relative overflow-hidden"
+    class="flex items-center justify-center min-h-screen relative overflow-hidden"
   >
     <video
       id="myVideo"
