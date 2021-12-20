@@ -14,11 +14,12 @@
       />
     </video>
     <div class="container text-center relative">
-      <h1 class="text-7xl mb-6">
+      <h1 class="text-4xl lg:text-7xl mb-4 lg:mb-6">
         <span class="font-black">WatchCam</span> Mate X2
       </h1>
-      <p class="text-3xl">Überwachen wie ein Profi</p>
-      <img class="my-6" src="" alt="" />
+      <p class="text-xl lg:text-3xl mb-6 lg:mb-8">
+        Überwachen wie ein Profi
+      </p>
       <Button>Entdecken</Button>
     </div>
   </section>

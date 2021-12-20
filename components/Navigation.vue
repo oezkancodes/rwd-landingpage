@@ -3,7 +3,7 @@
     <div
       class="py-4 container flex items-center justify-between"
     >
-      <Logo class="h-8" />
+      <Logo class="h-6 w-auto lg:h-8" />
       <Button>Kaufen</Button>
     </div>
   </nav>
