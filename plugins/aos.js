@@ -5,7 +5,6 @@ export default (context) => {
   if (process.client) {
     AOS.init({
       duration: 800,
-      once: true,
     });
   }
 };
