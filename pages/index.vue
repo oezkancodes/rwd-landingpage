@@ -1,5 +1,5 @@
 <template>
-  <h1>rwd-landingpage</h1>
+  <HeroSection />
 </template>
 
 <script>
