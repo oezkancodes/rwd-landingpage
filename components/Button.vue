@@ -5,7 +5,3 @@
     <slot name="default" />
   </button>
 </template>
-
-<script>
-  export default {};
-</script>

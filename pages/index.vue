@@ -1,7 +1,6 @@
 <template>
-  <HeroSection />
+  <div>
+    <HeroSection />
+    <PresentationSection />
+  </div>
 </template>
-
-<script>
-  export default {};
-</script>
