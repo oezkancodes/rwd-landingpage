@@ -23,9 +23,10 @@
       class="grid grid-cols-3 gap-y-12 lg:gap-x-6 max-w-5xl mx-auto"
     >
       <div
-        v-for="item in items"
+        v-for="(item, i) in items"
         :key="item.label"
         data-aos="fade-up"
+        :data-aos-delay="100 * i"
         class="col-span-3 lg:col-span-1 flex flex-col items-center space-y-4"
       >
         <img class="w-16 h-16" :src="item.src" />

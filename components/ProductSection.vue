@@ -17,7 +17,7 @@
           v-for="(item, i) in items"
           :key="i"
           data-aos="fade-up"
-          :data-aos-delay="100 + 100 * i"
+          :data-aos-delay="100 * i"
           class="col-span-4 md:col-span-2 xl:col-span-1 flex flex-col space-y-6 text-center items-center"
         >
           <!-- Image -->
