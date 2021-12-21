@@ -9,8 +9,8 @@
 
       <!-- Image -->
       <img
-        data-aos="fade-up rounded-2xl"
-        class="my-10"
+        data-aos="fade-up"
+        class="my-10 rounded-2xl"
         :src="images[activeIndex]"
         alt=""
       />
