@@ -1,67 +1,86 @@
 <template>
-  <section id="start" class="bg-black text-white">
+  <section
+    id="start"
+    class="bg-black text-white"
+    data-aos="fade-up"
+  >
     <div class="container max-w-5xl py-12 lg:py-24">
       <!-- Title -->
-      <h2 data-aos="fade-up" class="text-center">
+      <h2 class="text-center">
         Die intelligente Kamera. <br />
         Einfach überall platzieren.
       </h2>
 
       <!-- Image -->
       <img
-        data-aos="fade-up"
         class="my-10 rounded-2xl"
-        :src="images[activeIndex]"
+        :src="items[activeIndex].image.url"
         alt=""
       />
 
-      <!-- Content Grid -->
-      <div class="flex flex-col-reverse lg:flex-row">
-        <!-- Text -->
-        <p data-aos="fade-up" class="mt-4 lg:mt-0 lg:mr-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dicta sunt deserunt esse! Illum temporibus
-          unde dolores, nisi illo veritatis eum quae
-          doloribus ab, commodi laudantium amet
-          voluptatibus? Illum possimus totam eveniet quam.
-        </p>
-
-        <!-- Image Switch -->
+      <div class="grid grid-cols-12 gap-6">
         <div
-          data-aos="fade-up"
-          class="self-end lg:self-start flex items-center space-x-3"
+          v-for="(item, i) in items"
+          :key="item.title"
+          class="px-6 py-10 col-span-12 w-full max-w-sm mx-auto lg:col-span-4 lg:max-w-none flex flex-col items-center space-y-2 hover:ring-2 ring-red-600 rounded-xl transition duration-200 cursor-pointer"
+          :class="[
+            {
+              'ring-2 bg-red-600/20': activeIndex === i,
+            },
+            { 'animate-pulse': activeIndex !== i },
+          ]"
+          @click="activeIndex = i"
         >
-          <div
-            class="p-4 bg-indigo-300 hover:ring-2 ring-offset-4 ring-indigo-300 ring-offset-black rounded-full transition duration-100 cursor-pointer"
-            :class="{ 'ring-2': activeIndex === 0 }"
-            @click="activeIndex = 0"
-          />
-          <div
-            class="p-4 bg-rose-300 hover:ring-2 ring-offset-4 ring-rose-300 ring-offset-black rounded-full transition duration-100 cursor-pointer"
-            :class="{ 'ring-2': activeIndex === 1 }"
-            @click="activeIndex = 1"
-          />
-          <div
-            class="p-4 bg-white hover:ring-2 ring-offset-4 ring-white ring-offset-black rounded-full transition duration-100 cursor-pointer"
-            :class="{ 'ring-2': activeIndex === 2 }"
-            @click="activeIndex = 2"
-          />
+          <component :is="item.icon" class="text-red-600" />
+          <p class="text-center" v-text="item.title" />
         </div>
       </div>
+
+      <!-- Content Grid -->
+      <!-- Text -->
+      <p
+        class="mt-8 text-center"
+        v-text="items[activeIndex].text"
+      />
     </div>
   </section>
 </template>
 
 <script>
+  import CloudRainIcon from '~/static/images/cloud-rain.svg';
+  import ZapIcon from '~/static/images/zap.svg';
+  import HomeIcon from '~/static/images/home.svg';
+
   export default {
+    components: {
+      CloudRainIcon,
+      ZapIcon,
+      HomeIcon,
+    },
+
     data() {
       return {
-        images: [
-          '/images/camera-1.jpg',
-          '/images/camera-1.jpg',
-          '/images/camera-1.jpg',
-        ],
         activeIndex: 0,
+        items: [
+          {
+            title: 'Einrasten – und es passt',
+            icon: ZapIcon,
+            image: { url: '/images/easy.webp' },
+            text: 'Die akkubetriebene WatchCam Mate 2X lässt sich kinderleicht montieren. Du kannst sie so gut wie überall anbringen, drinnen oder draußen. Da die Kamera kein Kabel hat, brauchst du keine Steckdose in der Nähe.',
+          },
+          {
+            title: 'Für Wind und Wetter',
+            icon: CloudRainIcon,
+            image: { url: '/images/rain.webp' },
+            text: 'WatchCam Mate 2X ist akkubetrieben sowie witterungsbeständig und lässt sich jederzeit aufladen.',
+          },
+          {
+            title: 'Fast überall zu Hause',
+            icon: HomeIcon,
+            image: { url: '/images/home.jpg' },
+            text: 'WatchCam Mate 2X passt praktisch an jeden Platz. Damit du sie in Innenräumen ganz flexibel aufstellen kannst, gibt es als Zubehörteil einen Standfuß.',
+          },
+        ],
       };
     },
   };
