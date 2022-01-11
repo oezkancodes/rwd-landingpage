@@ -1,9 +1,6 @@
 <template>
-  <footer
-    data-aos="fade-up"
-    class="py-12 lg:py-24 bg-black text-white"
-  >
-    <div class="container">
+  <footer class="py-12 lg:py-24 bg-black text-white">
+    <div class="container" data-aos="fade-up">
       <div class="grid grid-cols-12 space-y-8 sm:space-y-0">
         <div
           v-for="section in sections"

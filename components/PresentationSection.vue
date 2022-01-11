@@ -1,10 +1,9 @@
 <template>
-  <section
-    id="start"
-    class="bg-black text-white"
-    data-aos="fade-up"
-  >
-    <div class="container max-w-5xl py-12 lg:py-24">
+  <section id="start" class="bg-black text-white">
+    <div
+      class="container max-w-5xl py-12 lg:py-24"
+      data-aos="fade-up"
+    >
       <!-- Title -->
       <h2 class="text-center">
         Die intelligente Kamera. <br />
