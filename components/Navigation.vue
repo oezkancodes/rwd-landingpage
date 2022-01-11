@@ -1,6 +1,6 @@
 <template>
   <nav
-    data-aos="fade-down"
+    data-aos="fade"
     class="bg-black absolute top-0 left-0 right-0 z-50"
   >
     <div
