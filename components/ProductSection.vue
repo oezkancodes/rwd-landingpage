@@ -10,7 +10,7 @@
       <div
         id="products"
         data-aos="fade-up"
-        class="mt-12 grid grid-cols-4 gap-8"
+        class="mt-12 grid grid-cols-12 gap-y-8 sm:gap-8"
       >
         <!-- Products Container -->
         <div
@@ -18,26 +18,26 @@
           :key="i"
           data-aos="fade-up"
           :data-aos-delay="100 * i"
-          class="col-span-4 md:col-span-2 xl:col-span-1 flex flex-col space-y-6 text-center items-center"
+          class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 flex flex-col space-y-6 text-center items-center"
         >
           <!-- Image -->
           <a
             href="#products"
-            class="flex justify-center items-center h-96 bg-gray-100 rounded-2xl"
+            class="flex justify-center items-center bg-gray-100 rounded-2xl overflow-hidden"
           >
             <img
-              class="max-h-full"
-              src="/images/recommended-product.png"
+              class="hover:scale-110 transition duration-500 w-full"
+              :src="item.image.url"
             />
           </a>
 
           <!-- Name -->
-          <p class="font-medium">HUAWEI Produkt</p>
+          <p class="font-medium" v-text="item.name" />
 
           <!-- Actions -->
-          <div class="flex space-x-1">
+          <div class="flex space-x-2">
             <Button white>entdecken</Button>
-            <Button>Kaufen</Button>
+            <Button white>Kaufen</Button>
           </div>
         </div>
       </div>
@@ -49,7 +49,24 @@
   export default {
     data() {
       return {
-        items: [{}, {}, {}, {}],
+        items: [
+          {
+            name: 'HUAWEI MatePad Pro',
+            image: { url: '/images/tablet.webp' },
+          },
+          {
+            name: 'HUAWEI WATCH 3 Pro',
+            image: { url: '/images/smartwatch.webp' },
+          },
+          {
+            name: 'HUAWEI FreeBuds 4',
+            image: { url: '/images/earbuds.webp' },
+          },
+          {
+            name: 'HUAWEI MateView',
+            image: { url: '/images/monitor.webp' },
+          },
+        ],
       };
     },
   };
