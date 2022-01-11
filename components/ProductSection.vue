@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 lg:py-24">
+  <section class="my-12 lg:my-24">
     <div class="container">
       <!-- Title -->
       <h2 data-aos="fade-up" class="text-center">

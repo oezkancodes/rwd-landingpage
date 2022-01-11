@@ -1,6 +1,6 @@
 <template>
   <kinesis-container class="parent">
-    <section class="py-12 lg:py-24 container text-center">
+    <section class="my-12 lg:my-24 container text-center">
       <!-- Title -->
       <h2 data-aos="fade-up" class="mb-8">
         Professionelle Überwachung
