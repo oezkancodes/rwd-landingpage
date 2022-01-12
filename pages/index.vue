@@ -4,5 +4,6 @@
     <PresentationSection />
     <FeatureSection />
     <ProductSection />
+    <InitialDialog />
   </div>
 </template>
