@@ -1,21 +1,9 @@
 <template>
-  <section
-    class="flex items-center justify-center min-h-screen relative overflow-hidden"
-  >
-    <!-- Background video -->
-    <video
-      id="myVideo"
-      class="absolute top-0 bottom-0 opacity-[15%] h-full w-full object-cover"
-      autoplay
-      muted
+  <kinesis-container>
+    <section
+      id="hero"
+      class="container text-center pt-28 pb-12 lg:pt-36 lg:pb-24"
     >
-      <source
-        src="/videos/background-video.mp4"
-        type="video/mp4"
-      />
-    </video>
-
-    <div class="container text-center relative">
       <!-- Title -->
       <h1
         data-aos="fade-up"
@@ -33,13 +21,77 @@
         Überwachen wie ein Profi
       </p>
 
+      <!-- Desktop Product -->
+      <div
+        class="hidden lg:block mb-6 lg:mb-12"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <kinesis-element
+          class="child relative z-50"
+          type="depth"
+          :strength="30"
+        >
+          <!-- Image -->
+          <img
+            class="my-12 w-full max-w-xs mx-auto drop-shadow-xl"
+            src="/images/nest-head.png"
+          />
+        </kinesis-element>
+
+        <img
+          class="-mt-28 w-full max-w-xs mx-auto"
+          src="/images/nest-body.png"
+        />
+      </div>
+
+      <!-- Mobile Product -->
+      <div
+        data-aos="fade-up"
+        data-aos-delay="400"
+        class="my-8 lg:hidden"
+      >
+        <img
+          class="relative my-6 w-full max-w-[12rem] mx-auto"
+          src="/images/nest-head.png"
+        />
+        <img
+          class="-mt-14 w-full max-w-[12rem] mx-auto"
+          src="/images/nest-body.png"
+        />
+      </div>
+
       <!-- CTA -->
       <Button
         v-scroll-to="{ el: '#start', offset: 1 }"
         data-aos="fade-up"
-        data-aos-delay="400"
-        >Entdecken</Button
+        data-aos-delay="600"
       >
-    </div>
-  </section>
+        Entdecken
+      </Button>
+    </section>
+  </kinesis-container>
 </template>
+
+<script>
+  import {
+    KinesisContainer,
+    KinesisElement,
+  } from 'vue-kinesis';
+
+  export default {
+    components: {
+      KinesisContainer,
+      KinesisElement,
+    },
+
+    mounted() {
+      const audio = new Audio('/sounds/robot.mp3');
+      window.document
+        .getElementById('hero')
+        .addEventListener('mousemove', () => {
+          audio.play();
+        });
+    },
+  };
+</script>
