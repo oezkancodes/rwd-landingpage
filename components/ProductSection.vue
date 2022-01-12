@@ -22,7 +22,6 @@
         >
           <!-- Image -->
           <a
-            href="#products"
             class="flex justify-center items-center bg-gray-100 rounded-2xl overflow-hidden"
           >
             <img
