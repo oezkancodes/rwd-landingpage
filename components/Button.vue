@@ -15,6 +15,7 @@
           gray && !white,
       },
     ]"
+    @click="$emit('click')"
   >
     <slot name="default" />
   </button>
