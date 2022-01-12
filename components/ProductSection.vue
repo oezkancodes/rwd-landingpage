@@ -37,7 +37,7 @@
           <!-- Actions -->
           <div class="flex space-x-2">
             <Button white>entdecken</Button>
-            <Button white>Kaufen</Button>
+            <Button gray>Kaufen</Button>
           </div>
         </div>
       </div>
