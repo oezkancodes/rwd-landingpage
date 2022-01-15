@@ -22,7 +22,6 @@
         <div
           v-for="(item, i) in items"
           :key="item.title"
-          v-scroll-to="{ el: '#start-image', offset: -12 }"
           class="px-6 py-10 col-span-12 w-full max-w-sm mx-auto lg:col-span-4 lg:max-w-none flex flex-col items-center space-y-2 hover:ring-2 ring-red-600 rounded-xl transition duration-200 cursor-pointer"
           :class="[
             {
