@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="show"
-    class="bg-black/20 absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center"
+    class="bg-black/20 fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center"
   >
     <div
       class="p-6 lg:p-8 bg-white rounded-xl max-w-lg mx-6"
