@@ -51,7 +51,7 @@
         items: [
           {
             src: '/images/feature-sensor.png',
-            label: 'Hochauflösende Aufnahmen',
+            label: 'Mehr sehen dank Weitwinkel',
           },
           {
             src: '/images/feature-color.png',
@@ -59,7 +59,7 @@
           },
           {
             src: '/images/feature-zoom.png',
-            label: '100x Zoom zeigt neue Details',
+            label: '10x Zoom zeigt neue Details',
           },
         ],
       };

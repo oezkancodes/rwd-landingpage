@@ -18,7 +18,7 @@
         data-aos-delay="200"
         class="text-xl lg:text-3xl mb-6 lg:mb-8"
       >
-        Überwachen wie ein Profi
+        Intelligentes Überwachen - wie ein Profi
       </p>
 
       <!-- Desktop Product -->
@@ -90,7 +90,9 @@
       window.document
         .getElementById('hero')
         .addEventListener('mousemove', () => {
-          audio.play();
+          if (window.innerWidth >= 1024) {
+            audio.play();
+          }
         });
     },
   };
