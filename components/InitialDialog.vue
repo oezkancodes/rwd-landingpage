@@ -7,8 +7,8 @@
       class="p-6 lg:p-8 bg-white rounded-xl max-w-lg mx-6"
     >
       <p class="mb-6">
-        Hey 👋, wir würden dich gerne mit Cookies und
-        Trackern überwachen. Wir nutzen deine Daten
+        Hey 👋, wir würden Dich gerne mit Cookies und
+        Trackern überwachen. Wir nutzen Deine Daten
         definitiv nur für gute Zwecke 🙏. Promise ✌️.
       </p>
       <Button @click="show = false">Einverstanden</Button>

@@ -11,7 +11,7 @@
       class="font-bold max-w-4xl mx-auto"
     >
       Lernen Sie von den Profis. Sogar in diesem Moment
-      überwachen wir Sie mit Trackern, Cookies und
+      überwachen wir Sie mit Cookies, Trackern und
       vielleicht mit Ihrer Webcam.
     </p>
 

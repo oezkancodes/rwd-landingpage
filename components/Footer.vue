@@ -17,7 +17,7 @@
               :key="item.label"
             >
               <a
-                class="hover:text-red-600 transition duration-100"
+                class="hover:text-red-500 transition duration-100"
                 href="#"
                 v-text="item.label"
               />
