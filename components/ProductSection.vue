@@ -22,7 +22,7 @@
         >
           <!-- Image -->
           <a
-            class="flex justify-center items-center bg-gray-100 rounded-2xl overflow-hidden"
+            class="flex justify-center items-center bg-gray-100 rounded-2xl overflow-hidden cursor-pointer"
           >
             <img
               class="hover:scale-110 transition duration-500 w-full"
