@@ -1,7 +1,5 @@
 # Landingpage für RWD
 
-> ⚠️ Projekt ist noch in Bearbeitung
-
 Landingpage für das Module Responsive Webdesign aus dem 4. Semester OMB an der Hochschule Furtwangen.
 
 [Live Demo](https://rwd-landingpage.netlify.app/)
